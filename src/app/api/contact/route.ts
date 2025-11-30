@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     const { data } = validation;
 
     // Store in database
-    const contact = await createContact(data);
+    await createContact(data);
 
     // Send notification email (don't fail the request if email fails)
     try {
@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(
-      { success: true, contact },
+      { success: true, message: "Thank you for your submission. We'll be in touch soon." },
       {
         headers: {
           "X-RateLimit-Limit": String(rateLimitResult.limit),

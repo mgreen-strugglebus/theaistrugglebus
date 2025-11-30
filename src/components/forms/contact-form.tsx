@@ -43,13 +43,26 @@ export function ContactForm({
         body: JSON.stringify(data),
       });
 
+      const result = await response.json();
+
       if (!response.ok) {
-        throw new Error("Failed to submit form");
+        // Show specific validation errors if available
+        if (result.details && Array.isArray(result.details)) {
+          const errorMessages = result.details
+            .map((err: { field: string; message: string }) => err.message)
+            .join(". ");
+          setError(errorMessages || result.error || "Please check your submission.");
+        } else if (response.status === 429) {
+          setError("Too many requests. Please wait a moment and try again.");
+        } else {
+          setError(result.error || "Something went wrong. Please try again.");
+        }
+        return;
       }
 
       setIsSuccess(true);
     } catch {
-      setError("Something went wrong. Please try again.");
+      setError("Unable to submit form. Please check your connection and try again.");
     } finally {
       setIsLoading(false);
     }
