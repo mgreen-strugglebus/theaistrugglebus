@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 
 const securityHeaders = [
   {
+    // Enforce HTTPS connections (1 year, include subdomains)
+    key: "Strict-Transport-Security",
+    value: "max-age=31536000; includeSubDomains; preload",
+  },
+  {
     // Prevent clickjacking attacks
     key: "X-Frame-Options",
     value: "DENY",
@@ -20,6 +25,11 @@ const securityHeaders = [
     // Control how much referrer information is sent
     key: "Referrer-Policy",
     value: "strict-origin-when-cross-origin",
+  },
+  {
+    // Control DNS prefetching
+    key: "X-DNS-Prefetch-Control",
+    value: "on",
   },
   {
     // Permissions policy (formerly Feature-Policy)

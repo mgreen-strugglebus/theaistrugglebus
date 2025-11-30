@@ -21,11 +21,23 @@ export type ContactInput = Record<string, unknown>;
 
 /**
  * Validates an email address format.
- * Uses a reasonable regex that catches most invalid emails without being overly strict.
+ * Uses a comprehensive regex that validates structure while avoiding false positives.
+ * Checks for:
+ * - Valid local part (letters, numbers, and common special chars)
+ * - Single @ symbol
+ * - Valid domain with at least one dot
+ * - TLD of at least 2 characters
  */
 export function isValidEmail(email: string): boolean {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email) && email.length <= MAX_FIELD_LENGTHS.email;
+  if (email.length > MAX_FIELD_LENGTHS.email) return false;
+
+  // More comprehensive email regex:
+  // - Local part: alphanumeric, dots, hyphens, underscores, plus signs
+  // - Domain: alphanumeric and hyphens, separated by dots
+  // - TLD: at least 2 letters
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]{2,}$/;
+
+  return emailRegex.test(email);
 }
 
 /**

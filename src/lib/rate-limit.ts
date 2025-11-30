@@ -1,6 +1,27 @@
 /**
- * Simple in-memory rate limiter for serverless environments.
- * Note: In a multi-instance deployment, consider using Redis or Vercel KV for distributed rate limiting.
+ * Rate limiting implementation for serverless environments.
+ *
+ * IMPORTANT: This implementation uses in-memory storage which works for:
+ * - Development environments
+ * - Single-instance deployments
+ * - Low-traffic applications
+ *
+ * For production with multiple serverless instances, consider:
+ * 1. Vercel KV (Redis) - npm install @vercel/kv
+ * 2. Upstash Redis - npm install @upstash/ratelimit @upstash/redis
+ * 3. Cloudflare Durable Objects
+ *
+ * Example with Upstash (recommended for Vercel):
+ * ```typescript
+ * import { Ratelimit } from "@upstash/ratelimit";
+ * import { Redis } from "@upstash/redis";
+ *
+ * const ratelimit = new Ratelimit({
+ *   redis: Redis.fromEnv(),
+ *   limiter: Ratelimit.slidingWindow(5, "60 s"),
+ *   analytics: true,
+ * });
+ * ```
  */
 
 interface RateLimitEntry {
