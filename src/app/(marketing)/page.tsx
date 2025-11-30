@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { WavyDivider } from "@/components/ui/section-divider";
 import { PreloadVideo } from "@/components/ui/preload-video";
 import { solutionCategories } from "@/lib/constants";
+import { Rocket, Zap, DollarSign, BarChart3, Map } from "lucide-react";
 
 export default function HomePage() {
 
@@ -33,7 +34,7 @@ export default function HomePage() {
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
               Leave the paperwork in the rearview mirror. We guide businesses
               from chaos to open roads with AI workflows that actually work.
-              Over 50% of small businesses are exploring AI—let us show you the
+              Over 50% of small businesses are exploring AI. Let us show you the
               way.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -65,7 +66,7 @@ export default function HomePage() {
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
                 Only about one in four small businesses have fully integrated
-                AI. The rest are stuck in neutral—needing clear ROI and
+                AI. The rest are stuck in neutral, needing clear ROI and
                 easy-to-use tools to get moving.
               </p>
               <div className="mt-8">
@@ -114,7 +115,7 @@ export default function HomePage() {
                 The AI Struggle Bus automates the internal workflows that choke
                 your speed-to-revenue. Our agents run quietly inside your
                 website, CRM, accounting software, and communication
-                channels—listening, extracting, structuring, routing, and
+                channels: listening, extracting, structuring, routing, and
                 publishing work automatically.
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -137,7 +138,7 @@ export default function HomePage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Card className="rounded-2xl border-2 border-secondary bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
-                <div className="mb-2 text-3xl">🚀</div>
+                <Rocket className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle className="text-primary">Faster launches</CardTitle>
               </CardHeader>
               <CardContent>
@@ -149,7 +150,7 @@ export default function HomePage() {
             </Card>
             <Card className="rounded-2xl border-2 border-secondary bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
-                <div className="mb-2 text-3xl">⚡</div>
+                <Zap className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle className="text-primary">4x productivity</CardTitle>
               </CardHeader>
               <CardContent>
@@ -160,7 +161,7 @@ export default function HomePage() {
             </Card>
             <Card className="rounded-2xl border-2 border-secondary bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
-                <div className="mb-2 text-3xl">💰</div>
+                <DollarSign className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle className="text-primary">Pennies to run</CardTitle>
               </CardHeader>
               <CardContent>
@@ -172,7 +173,7 @@ export default function HomePage() {
             </Card>
             <Card className="rounded-2xl border-2 border-secondary bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
-                <div className="mb-2 text-3xl">📊</div>
+                <BarChart3 className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle className="text-primary">$50K+ identified</CardTitle>
               </CardHeader>
               <CardContent>
@@ -295,7 +296,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="mt-6 rounded-2xl border-2 border-secondary bg-white p-6 text-center shadow-md transition-all group-hover:-translate-y-1 group-hover:shadow-lg">
-                    <div className="mb-2 text-3xl">🗺️</div>
+                    <Map className="mx-auto mb-2 h-8 w-8 text-primary" />
                     <h3 className="text-xl font-bold text-foreground">Week 1</h3>
                     <p className="mt-1 text-sm font-medium text-primary">Map the Route</p>
                     <p className="mt-3 text-muted-foreground">
@@ -312,7 +313,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="mt-6 rounded-2xl border-2 border-secondary bg-white p-6 text-center shadow-md transition-all group-hover:-translate-y-1 group-hover:shadow-lg">
-                    <div className="mb-2 text-3xl">🚀</div>
+                    <Rocket className="mx-auto mb-2 h-8 w-8 text-primary" />
                     <h3 className="text-xl font-bold text-foreground">Week 2-3</h3>
                     <p className="mt-1 text-sm font-medium text-primary">Hit the Road</p>
                     <p className="mt-3 text-muted-foreground">
@@ -329,7 +330,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="mt-6 rounded-2xl border-2 border-secondary bg-white p-6 text-center shadow-md transition-all group-hover:-translate-y-1 group-hover:shadow-lg">
-                    <div className="mb-2 text-3xl">📊</div>
+                    <BarChart3 className="mx-auto mb-2 h-8 w-8 text-primary" />
                     <h3 className="text-xl font-bold text-foreground">Week 4</h3>
                     <p className="mt-1 text-sm font-medium text-primary">Check the Odometer</p>
                     <p className="mt-3 text-muted-foreground">

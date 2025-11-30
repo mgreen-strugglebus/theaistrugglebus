@@ -15,7 +15,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/aisb-logo.png"
+            src="/images/logo.png"
             alt="AI Struggle Bus Logo"
             width={36}
             height={36}
@@ -67,7 +67,7 @@ export function Header() {
           <SheetContent side="right" className="w-[300px]">
             <div className="mb-6 flex items-center gap-3">
               <Image
-                src="/images/aisb-logo.png"
+                src="/images/logo.png"
                 alt="AI Struggle Bus Logo"
                 width={32}
                 height={32}

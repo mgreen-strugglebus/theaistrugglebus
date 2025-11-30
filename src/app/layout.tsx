@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "The AI Struggle Bus" }],
   icons: {
-    icon: "/images/aisb-logo.png",
-    apple: "/images/aisb-logo.png",
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   openGraph: {
     type: "website",
