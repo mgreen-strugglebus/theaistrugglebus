@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { WavyDivider } from "@/components/ui/section-divider";
+import { Wrench, BarChart3, Sparkles, User } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,7 +22,7 @@ export default function AboutPage() {
               Built by drivers, for drivers.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              We&apos;re not just AI consultants—we&apos;re operators who&apos;ve
+              We&apos;re not just AI consultants. We&apos;re operators who&apos;ve
               been in the driver&apos;s seat. We&apos;ve built businesses, felt the
               friction, and discovered how AI can clear the road.
             </p>
@@ -49,7 +50,7 @@ export default function AboutPage() {
                 The origin story
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                We&apos;ve been practicing AI since the early days—before the
+                We&apos;ve been practicing AI since the early days, before the
                 hype, before the buzzwords, before everyone had an opinion. We
                 watched adoption climb from around 40% of small businesses using
                 AI in 2024 to almost 60% in 2025.
@@ -63,7 +64,7 @@ export default function AboutPage() {
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
                 So we built The AI Struggle Bus. A different kind of AI
-                partner—one that embeds working solutions into your existing
+                partner, one that embeds working solutions into your existing
                 tools and measures success in hours saved and revenue gained.
               </p>
             </div>
@@ -93,8 +94,8 @@ export default function AboutPage() {
 
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-3xl">
-                🔧
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <Wrench className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground">Practicality</h3>
               <p className="mt-2 text-muted-foreground">
@@ -104,8 +105,8 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-3xl">
-                📊
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <BarChart3 className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground">
                 Measurable Outcomes
@@ -117,10 +118,10 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-3xl">
-                💪
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                <Sparkles className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground">Empowerment</h3>
+              <h3 className="text-xl font-bold text-foreground">Ownership</h3>
               <p className="mt-2 text-muted-foreground">
                 Our goal is to reduce the drudge work so you can focus on
                 growth. We put you back in the driver&apos;s seat.
@@ -221,8 +222,8 @@ export default function AboutPage() {
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="text-center">
-              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center text-4xl">
-                👤
+              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center">
+                <User className="h-16 w-16 text-muted-foreground" />
               </div>
               <h3 className="mt-4 text-xl font-bold text-foreground">
                 [Team Member 1]
@@ -234,8 +235,8 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center text-4xl">
-                👤
+              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center">
+                <User className="h-16 w-16 text-muted-foreground" />
               </div>
               <h3 className="mt-4 text-xl font-bold text-foreground">
                 [Team Member 2]
@@ -247,8 +248,8 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center text-4xl">
-                👤
+              <div className="mx-auto h-[200px] w-[200px] rounded-full bg-secondary flex items-center justify-center">
+                <User className="h-16 w-16 text-muted-foreground" />
               </div>
               <h3 className="mt-4 text-xl font-bold text-foreground">
                 [Team Member 3]

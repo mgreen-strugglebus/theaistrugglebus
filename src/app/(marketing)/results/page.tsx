@@ -78,7 +78,7 @@ const caseStudies = [
       { metric: "Zero", description: "additional hires needed" },
     ],
     quote:
-      "We doubled our client roster without doubling our team. That's not magic—that's the right workflows.",
+      "We doubled our client roster without doubling our team. That's not magic. That's the right workflows.",
   },
 ];
 

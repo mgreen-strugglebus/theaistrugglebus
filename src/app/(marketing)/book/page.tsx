@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/forms/contact-form";
 export const metadata: Metadata = {
   title: "Book a Call",
   description:
-    "Schedule a conversation about your AI journey. No pressure, no pitch deck—just honest advice.",
+    "Schedule a conversation about your AI journey. No pressure, no pitch deck. Just honest advice.",
 };
 
 export default function BookPage() {
@@ -22,7 +22,7 @@ export default function BookPage() {
               </h1>
               <p className="mt-6 text-lg text-muted-foreground">
                 Whether you&apos;re just exploring AI or ready to hit the gas,
-                we&apos;re here to help. No pressure, no jargon—just an honest
+                we&apos;re here to help. No pressure, no jargon. Just an honest
                 conversation about what&apos;s possible for your business.
               </p>
               <ul className="mt-8 space-y-3 text-muted-foreground">
@@ -114,7 +114,7 @@ export default function BookPage() {
               </div>
               <h3 className="text-xl font-bold text-foreground">We advise</h3>
               <p className="mt-2 text-muted-foreground">
-                We give honest feedback on whether AI can help—and how.
+                We give honest feedback on whether AI can help, and how.
               </p>
             </div>
           </div>

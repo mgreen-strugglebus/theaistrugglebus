@@ -23,7 +23,7 @@ export default function SolutionsPage() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               AI workflows tailored to your business function. Each solution is
-              designed to embed seamlessly into your existing tools and deliver
+              designed to embed directly into your existing tools and deliver
               measurable results.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function SolutionsPage() {
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 AI generates on-brand content, product descriptions, and
-                campaign assets—then routes them through approval and publishes
+                campaign assets, then routes them through approval and publishes
                 when ready. Over 77% of small businesses use AI in marketing.
                 Join them.
               </p>
@@ -130,7 +130,7 @@ export default function SolutionsPage() {
               <p className="mt-4 text-lg text-muted-foreground">
                 AI assistants handle routine inquiries and scheduling while you
                 focus on what matters. 84% of small businesses are willing to
-                automate customer service—we make it happen.
+                automate customer service. We make it happen.
               </p>
 
               <div className="mt-8">
@@ -193,7 +193,7 @@ export default function SolutionsPage() {
               <p className="mt-4 text-lg text-muted-foreground">
                 Agents download and reconcile reports, forecast cash flow, and
                 summarise key metrics. 53% of small businesses cite cash-flow
-                forecasting as a critical pain point—we solve it.
+                forecasting as a critical pain point. We solve it.
               </p>
 
               <div className="mt-8">
@@ -417,7 +417,7 @@ export default function SolutionsPage() {
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 AI initiatives stall. Teams get stuck. Investments sit unused.
-                We&apos;ve seen it all—and we know how to get you back on the
+                We&apos;ve seen it all, and we know how to get you back on the
                 road. Whether you need to rescue a failed deployment or upskill
                 your team, we&apos;re here to help.
               </p>

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Bus } from "lucide-react";
 
 interface ImagePlaceholderProps {
   name: string;
@@ -30,7 +31,7 @@ export function ImagePlaceholder({
       role="img"
       aria-label={description}
     >
-      <div className="mb-2 text-4xl">🚌</div>
+      <Bus className="mb-2 h-10 w-10 text-primary" />
       <p className="font-semibold text-foreground">{name}</p>
       <p className="mt-1 text-sm text-muted-foreground">{description}</p>
     </div>

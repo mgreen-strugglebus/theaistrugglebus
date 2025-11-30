@@ -59,7 +59,7 @@ export default function IntegrationsPage() {
               <p className="mt-6 text-lg text-muted-foreground">
                 No new platforms to learn. No data migration headaches. Our AI
                 agents plug directly into the tools you already use. 60% of U.S.
-                small businesses already use AI—we make it work with your
+                small businesses already use AI. We make it work with your
                 existing stack.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function IntegrationsPage() {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               These are some of the platforms we commonly integrate. Don&apos;t
-              see yours? Ask us—we can likely connect it.
+              see yours? Ask us. We can likely connect it.
             </p>
           </div>
 

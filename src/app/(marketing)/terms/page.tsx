@@ -51,8 +51,8 @@ export default function TermsPage() {
                 Intellectual Property
               </h2>
               <p className="mt-4 text-muted-foreground">
-                The content on this website—including text, graphics, logos, and
-                illustrations—is owned by The AI Struggle Bus and is protected by
+                The content on this website (including text, graphics, logos, and
+                illustrations) is owned by The AI Struggle Bus and is protected by
                 intellectual property laws. You may not reproduce, distribute,
                 or create derivative works from our content without written
                 permission.

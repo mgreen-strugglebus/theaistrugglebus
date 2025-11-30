@@ -13,12 +13,12 @@ const faqs = [
   {
     question: "Do we need to buy a new platform or software?",
     answer:
-      "Nope. Our AI agents embed directly into the tools you already use—your CRM, website, accounting software, Slack, and more. We believe in working with your existing stack, not replacing it. No new portals to log into, no learning curves to climb.",
+      "Nope. Our AI agents embed directly into the tools you already use: your CRM, website, accounting software, Slack, and more. We believe in working with your existing stack, not replacing it. No new portals to log into, no learning curves to climb.",
   },
   {
     question: "How quickly will we see results?",
     answer:
-      "Within 30 days. Our sprint model is designed for busy entrepreneurs who need to see value fast. By the end of week 4, you'll have working AI workflows and measured ROI—not a roadmap for 'someday.'",
+      "Within 30 days. Our sprint model is designed for busy entrepreneurs who need to see value fast. By the end of week 4, you'll have working AI workflows and measured ROI, not a roadmap for 'someday.'",
   },
   {
     question: "What kind of data do you need access to?",
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "How is security and privacy handled?",
     answer:
-      "Seriously. We build guardrails into every workflow including role-based access, audit trails, and market-specific compliance policies. We know 38% of small businesses worry about data privacy with AI—we address those concerns head-on.",
+      "Seriously. We build guardrails into every workflow including role-based access, audit trails, and market-specific compliance policies. We know 38% of small businesses worry about data privacy with AI. We address those concerns head-on.",
   },
   {
     question: "How much does it cost?",
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "What if we're not ready for AI yet?",
     answer:
-      "That's what the assessment is for. We help you figure out if AI is right for you right now—and if not, what you'd need to get ready. There's no pressure to buy anything. Sometimes the best advice is 'wait and do this first.'",
+      "That's what the assessment is for. We help you figure out if AI is right for you right now, and if not, what you'd need to get ready. There's no pressure to buy anything. Sometimes the best advice is 'wait and do this first.'",
   },
   {
     question: "How do you measure success?",
@@ -68,7 +68,7 @@ const faqs = [
   {
     question: "Can we start with just one small project?",
     answer:
-      "Absolutely. Many clients start with a single workflow to prove value before expanding. We'll help you pick the highest-ROI starting point. Small wins build confidence—and momentum.",
+      "Absolutely. Many clients start with a single workflow to prove value before expanding. We'll help you pick the highest-ROI starting point. Small wins build confidence and momentum.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function FAQPage() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               Common questions we hear from fellow travelers. If yours isn&apos;t
-              here, just ask—we love a good conversation.
+              here, just ask. We love a good conversation.
             </p>
           </div>
         </div>

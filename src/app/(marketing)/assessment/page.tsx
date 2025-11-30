@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { WavyDivider } from "@/components/ui/section-divider";
 import { ContactForm } from "@/components/forms/contact-form";
+import { Map, ClipboardList, DollarSign, Zap, Telescope, Handshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AI Readiness Assessment",
@@ -28,7 +29,7 @@ export default function AssessmentPage() {
                 51% are &ldquo;Explorers&rdquo; experimenting with AI, while
                 security concerns and unclear ROI keep them parked. Our
                 assessment identifies the fastest-ROI routes and shows you the
-                business case—before you burn any fuel.
+                business case before you burn any fuel.
               </p>
               <div className="mt-8">
                 <Button size="lg" asChild>
@@ -107,7 +108,7 @@ export default function AssessmentPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   We deliver a prioritised list of AI workflows, savings model,
-                  and a 30-day sprint plan—your personalised GPS for AI success.
+                  and a 30-day sprint plan, your personalised GPS for AI success.
                 </p>
               </CardContent>
             </Card>
@@ -165,7 +166,7 @@ export default function AssessmentPage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">🗺️</div>
+              <Map className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">Opportunity Map</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Visual overview of where AI can drive the most value in your
@@ -173,7 +174,7 @@ export default function AssessmentPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">📋</div>
+              <ClipboardList className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">
                 Workflow Portfolio
               </h3>
@@ -183,14 +184,14 @@ export default function AssessmentPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">💵</div>
+              <DollarSign className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">Savings Model</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Clear financial projections showing time and cost savings.
               </p>
             </div>
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">🏃</div>
+              <Zap className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">
                 30-Day Sprint Plan
               </h3>
@@ -199,7 +200,7 @@ export default function AssessmentPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">🔭</div>
+              <Telescope className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">
                 90-Day Scale Roadmap
               </h3>
@@ -208,7 +209,7 @@ export default function AssessmentPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-secondary bg-background p-6">
-              <div className="mb-4 text-3xl">🤝</div>
+              <Handshake className="mb-4 h-8 w-8 text-primary" />
               <h3 className="font-semibold text-foreground">Expert Guidance</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Direct access to our team throughout the assessment process.

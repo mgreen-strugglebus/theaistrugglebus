@@ -115,7 +115,7 @@ const results: Record<Category, { title: string; description: string; nextSteps:
   early_stage: {
     title: "Early Stage Explorer",
     description:
-      "You're at the beginning of your AI journey—and that's a great place to be. There's significant opportunity to leapfrog competitors who are still figuring things out.",
+      "You're at the beginning of your AI journey, and that's a great place to be. There's significant opportunity to leapfrog competitors who are still figuring things out.",
     nextSteps: [
       "Start with our AI Mistakes Guide to avoid common pitfalls",
       "Identify one high-repetition task that eats up time",
@@ -135,7 +135,7 @@ const results: Record<Category, { title: string; description: string; nextSteps:
   roi_ready: {
     title: "ROI Ready",
     description:
-      "You've got the foundation in place and you're ready to see real returns from AI. The question isn't whether to adopt AI—it's which workflows will drive the most value.",
+      "You've got the foundation in place and you're ready to see real returns from AI. The question isn't whether to adopt AI. It's which workflows will drive the most value.",
     nextSteps: [
       "Prioritize by potential time/cost savings",
       "Consider embedded AI over standalone tools",

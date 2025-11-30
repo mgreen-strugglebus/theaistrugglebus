@@ -40,7 +40,7 @@ export default function PrivacyPage() {
                     Information you provide:
                   </strong>{" "}
                   When you fill out a form, take our quiz, or contact us, we
-                  collect the information you submit—typically your name, email,
+                  collect the information you submit: typically your name, email,
                   company name, and any message you include.
                 </p>
                 <p>

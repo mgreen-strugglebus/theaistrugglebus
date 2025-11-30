@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { WavyDivider } from "@/components/ui/section-divider";
 import { ContactForm } from "@/components/forms/contact-form";
 import { PreloadVideo } from "@/components/ui/preload-video";
+import { Settings, BarChart3, Shield, BookOpen, Map, Handshake } from "lucide-react";
 
 export default function SprintPage() {
   return (
@@ -105,7 +106,7 @@ export default function SprintPage() {
                   Weeks 2-3: Hit the Road
                 </h3>
                 <p className="mt-2 text-muted-foreground">
-                  Build and embed agents into your tools—website, CRM,
+                  Build and embed agents into your tools: website, CRM,
                   accounting system, Slack. Test with your team and iron out any
                   bumps in the road.
                 </p>
@@ -135,7 +136,7 @@ export default function SprintPage() {
                   Week 4: Check the Odometer
                 </h3>
                 <p className="mt-2 text-muted-foreground">
-                  Measure results—hours saved, faster response times, improved
+                  Measure results: hours saved, faster response times, improved
                   metrics. Deliver a plan for the next 90 days of your journey.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -169,7 +170,7 @@ export default function SprintPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">⚙️</div>
+                <Settings className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>2-5 Deployed Workflows</CardTitle>
               </CardHeader>
               <CardContent>
@@ -182,7 +183,7 @@ export default function SprintPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">📊</div>
+                <BarChart3 className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>ROI Baseline</CardTitle>
               </CardHeader>
               <CardContent>
@@ -194,7 +195,7 @@ export default function SprintPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">🛡️</div>
+                <Shield className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Guardrails & Compliance</CardTitle>
               </CardHeader>
               <CardContent>
@@ -207,7 +208,7 @@ export default function SprintPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">📖</div>
+                <BookOpen className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Ownership Playbooks</CardTitle>
               </CardHeader>
               <CardContent>
@@ -219,7 +220,7 @@ export default function SprintPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">🗺️</div>
+                <Map className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Scale Roadmap</CardTitle>
               </CardHeader>
               <CardContent>
@@ -231,7 +232,7 @@ export default function SprintPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">🤝</div>
+                <Handshake className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Ongoing Support</CardTitle>
               </CardHeader>
               <CardContent>
@@ -293,7 +294,7 @@ export default function SprintPage() {
                       No vendor lock-in
                     </p>
                     <p className="text-muted-foreground">
-                      We work with your existing tools—no new portals required.
+                      We work with your existing tools. No new portals required.
                     </p>
                   </div>
                 </li>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { WavyDivider } from "@/components/ui/section-divider";
+import { Ban, Flag, Video, Mail, BarChart3 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -23,7 +24,7 @@ export default function ResourcesPage() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               Free tools and guides to help you navigate your AI journey. No
-              email required for most—just helpful content from fellow travelers.
+              email required for most. Just helpful content from fellow travelers.
             </p>
           </div>
         </div>
@@ -49,7 +50,7 @@ export default function ResourcesPage() {
               </p>
               <p className="mt-4 text-muted-foreground">
                 Based on your answers, we&apos;ll place you in one of three
-                categories—Early Stage, Workflow Friction, or ROI Ready—and
+                categories (Early Stage, Workflow Friction, or ROI Ready) and
                 give you personalised next steps.
               </p>
               <div className="mt-8">
@@ -88,12 +89,12 @@ export default function ResourcesPage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">🚫</div>
+                <Ban className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Top 10 AI Mistakes Guide</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Common errors small businesses make when adopting AI—and how
+                  Common errors small businesses make when adopting AI, and how
                   to avoid them. Learn why starting with tools instead of
                   workflows is a recipe for wasted money, and what to do
                   instead.
@@ -115,13 +116,13 @@ export default function ResourcesPage() {
 
             <Card className="rounded-2xl border-2 border-secondary">
               <CardHeader>
-                <div className="mb-2 text-3xl">🚩</div>
+                <Flag className="mb-2 h-8 w-8 text-primary" />
                 <CardTitle>Top 10 Red Flags for AI Vendors</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
                   A sharper checklist for evaluating AI vendors. Know what to
-                  look for—and what to run from—when someone promises to
+                  look for, and what to run from, when someone promises to
                   &ldquo;transform your business with AI.&rdquo;
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
@@ -161,7 +162,7 @@ export default function ResourcesPage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-2xl border-2 border-dashed border-secondary bg-background p-6 text-center">
-              <div className="mb-4 text-3xl opacity-50">📹</div>
+              <Video className="mx-auto mb-4 h-8 w-8 text-muted-foreground opacity-50" />
               <h3 className="font-semibold text-foreground">
                 Video Walkthroughs
               </h3>
@@ -174,7 +175,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="rounded-2xl border-2 border-dashed border-secondary bg-background p-6 text-center">
-              <div className="mb-4 text-3xl opacity-50">📧</div>
+              <Mail className="mx-auto mb-4 h-8 w-8 text-muted-foreground opacity-50" />
               <h3 className="font-semibold text-foreground">
                 Email Templates
               </h3>
@@ -187,7 +188,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="rounded-2xl border-2 border-dashed border-secondary bg-background p-6 text-center">
-              <div className="mb-4 text-3xl opacity-50">📊</div>
+              <BarChart3 className="mx-auto mb-4 h-8 w-8 text-muted-foreground opacity-50" />
               <h3 className="font-semibold text-foreground">ROI Calculator</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Estimate your potential savings from AI automation.
